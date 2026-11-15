@@ -30,5 +30,22 @@ These concepts are practiced throughout the course with examples and assignments
 ## 🛠️ Tools & Environment
 
 - **Java JDK** (version 8 or higher)  
-- **IDE:** Visual Studio Code with Java Extensions  
+- **IDE:** Visual Studio Code with Java Extensions
 
+## Run locally
+
+Use JDK 8+ and optionally VS Code with the Java Extension Pack. The runnable sources are in `project1/src/`; each test/demo class has its own entry point.
+
+```bash
+git clone https://github.com/NiraphatK/java-upskill-course.git
+cd java-upskill-course/project1
+mkdir -p out
+javac -d out src/*.java
+java -cp out Main
+```
+
+On Windows, create the output directory with `mkdir out`; use VS Code's Java project view if your shell does not expand `src/*.java`.
+
+For individual exercises, run a compiled demo such as `java -cp out TestDate` or `java -cp out TestInvoice`. `Main` and demo/test classes are executable examples, not a JUnit test suite. Open `project1/` in VS Code to run them from the editor.
+
+The source includes customer/invoice/discount examples, student lists, and both traditional and modern date/time classes. No Maven or Gradle wrapper is included.
